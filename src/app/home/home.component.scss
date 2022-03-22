@@ -1,0 +1,21 @@
+.home{
+    margin: 0;
+    padding: 0;
+    height: 94vh;
+    width: 100vw;
+    top:0;
+    background-image: url("../../assets/images/home-bg.jpg");
+    // filter: blur(1px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(1px);
+    color:white;
+    z-index: -1;
+        .container{
+
+            padding-left:2rem;
+            padding-right: 2rem;
+            padding-top: 20vh;
+            z-index: 1;
+        }
+}

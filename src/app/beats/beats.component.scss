@@ -1,0 +1,42 @@
+.container-fluid{
+    margin:0;
+    padding:0;
+    background-color: black;
+    color:white;
+    height: 96vh;
+    form{
+        padding:2rem 5rem;
+    }
+    .beats-table{
+        padding:2rem 5rem;
+        display: grid;
+
+        .filter{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .filters{
+                display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            }
+        }
+        .track{
+            display: flex;
+            justify-content: space-between;
+            .track-name{
+                display: flex;
+                p{
+                    padding:2px;
+                }
+
+            }
+            .details{
+                display: flex;
+                p{
+                    padding:2px;
+                }
+            }
+        }
+    }
+}
