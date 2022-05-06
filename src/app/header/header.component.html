@@ -16,6 +16,25 @@
               <input class="form-control me-3" style="padding-left:10px; "type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-warning" type="submit">Search</button>
             </form>
+          
+          </div>
+          <div class="mobile hamburger">
+            <div class="mymenuoption" *ngIf="!menuShow;else close">
+            <p class="" style="padding-top:0.5rem;" (click)="showMenu()">Menu</p>
+           </div>
+           <ng-template class="close" #close>
+            <p class="" style="padding-top:0.5rem;" (click)="showMenu()">Close</p>
+           </ng-template>
+          <div class="menu" [ngClass]="[navStyle]" >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/beats">Beats</a>
+              </li>
+            </ul>
+          </div>
           </div>
         </div>
       </nav>
