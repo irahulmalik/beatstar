@@ -1,1 +1,23 @@
-<p>user-page works!</p>
+<div class="custom-header">
+    <div class="myheader">
+        <ul><li><a>Logo</a></li></ul>
+    
+        <ul>
+            <li><a>Beats</a></li>
+            <li><a>About</a></li>
+            <li><a>Contact Me</a></li>
+        </ul>
+    </div>
+    <div class="mymobileheader">
+        <ul><li><a>Logo</a></li></ul>
+    
+        <ul [ngClass]="[navStyle]" (click)="toggleMenu()">
+            <li><a>Beats</a></li>
+            <li><a>About</a></li>
+            <li><a>Contact Me</a></li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    
+</div>
