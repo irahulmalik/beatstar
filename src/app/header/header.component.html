@@ -18,24 +18,31 @@
             </form>
           
           </div>
-          <div class="mobile hamburger">
+        </div>
+          <div class="mobile">
+            <div class="mainHeader" style=" min-width:100vw ;display: flex; justify-content: space-between; align-items: center;">
+          
+            <div class="logo">
+              <a class="navbar-brand" style=" color:rgb(220, 244, 255);" routerLink="/">BeatsWorld</a>
+            </div>
             <div class="mymenuoption" *ngIf="!menuShow;else close">
             <p class="" style="padding-top:0.5rem;" (click)="showMenu()">Menu</p>
            </div>
-           <ng-template class="close" #close>
+           <ng-template class="mymenuoption" #close>
             <p class="" style="padding-top:0.5rem;" (click)="showMenu()">Close</p>
            </ng-template>
-          <div class="menu" [ngClass]="[navStyle]" >
+          </div>
+          <div class="" [ngClass]="[navStyle]" >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" routerLink="/" (click)="showMenu()">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" routerLink="/beats">Beats</a>
+                <a class="nav-link" routerLink="/beats" (click)="showMenu()">Beats</a>
               </li>
             </ul>
           </div>
           </div>
-        </div>
+        
       </nav>
 </div>
